@@ -1,0 +1,36 @@
+{
+  "verification": "Fresh local compilation of this exact public source",
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "command": "lean lean/MarkedGate.lean",
+  "source_sha256": "2499f8f6dd0c2aea0951b2c786e3021b0099e97bd4e4352227c06822f6fc2e3f",
+  "exit_code": 0,
+  "theorem_count": 10,
+  "theorems": [
+    "initial_margin_identities",
+    "old_implies_new",
+    "admissibility_counterexample",
+    "gate_point_margin",
+    "clipping_does_not_repair",
+    "positive_width_normalization",
+    "no_sixth_power_alias",
+    "same_mobius_sign",
+    "inverse_capacity_monotone",
+    "endpoint_and_license"
+  ],
+  "axioms": {
+    "initial_margin_identities": "propext, Classical.choice, Quot.sound",
+    "old_implies_new": "propext, Classical.choice, Quot.sound",
+    "admissibility_counterexample": "propext, Classical.choice, Quot.sound",
+    "gate_point_margin": "propext, Classical.choice, Quot.sound",
+    "clipping_does_not_repair": "propext, Classical.choice, Quot.sound",
+    "positive_width_normalization": "propext, Classical.choice, Quot.sound",
+    "no_sixth_power_alias": "propext, Quot.sound",
+    "same_mobius_sign": "propext, Quot.sound",
+    "inverse_capacity_monotone": "propext, Classical.choice, Quot.sound",
+    "endpoint_and_license": "propext, Classical.choice, Quot.sound"
+  },
+  "custom_axioms": false,
+  "placeholders": false,
+  "analytic_moment_or_RH_formalized": false,
+  "github_ci_builds_lean": false
+}

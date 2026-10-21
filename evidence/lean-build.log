@@ -1,0 +1,103 @@
+lean/MarkedGate.lean:41:5: warning: Variable name `hgap` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hgap
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+theorem MarkedGate.initial_margin_identities.{u} : ∀ {R : Type u} [inst : Field R] [inst_1 : LE R] [inst_2 : LT R]
+  [LawfulOrderLT R] [inst_4 : IsLinearOrder R] [OrderedRing R] (m r z G P : R),
+  have D := r + z - 2 * G;
+  have F := D - P;
+  have M := 2 * D - m - 2 * P;
+  have Q := P + G;
+  have z0 := z - G;
+  F - M - Q - z0 = m - r - 2 * z + 2 * G ∧
+    4 * F - 3 * M - 6 * z0 = 3 * m - 2 * r - 8 * z + 10 * G + 2 * P ∧ F - M - Q = m - r - z + G :=
+fun {R} [Field R] [LE R] [LT R] [LawfulOrderLT R] [IsLinearOrder R] [OrderedRing R] m r z G P =>
+  id (MarkedGate.initial_margin_identities._proof_1_3 m r z G P)
+'MarkedGate.initial_margin_identities' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem MarkedGate.old_implies_new.{u} : ∀ {R : Type u} [inst : Field R] [inst_1 : LE R] [inst_2 : LT R]
+  [LawfulOrderLT R] [inst_4 : IsLinearOrder R] [OrderedRing R] (m r z : R), 0 ≤ z → r + 2 * z < m → r + z < m :=
+fun {R} [Field R] [LE R] [LT R] [LawfulOrderLT R] [IsLinearOrder R] [OrderedRing R] m r z hz h =>
+  MarkedGate.old_implies_new._proof_1_3 m r z hz h
+'MarkedGate.old_implies_new' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem MarkedGate.admissibility_counterexample.{u} : ∀ {R : Type u} [inst : Field R] [inst_1 : LE R] [inst_2 : LT R]
+  [LawfulOrderLT R] [inst_4 : IsLinearOrder R] [OrderedRing R],
+  4 / 5 + 3 / 20 < 1 ∧ 2 * (4 / 5) + 8 * (3 / 20) < 3 ∧ 1 - 4 / 5 - 2 * (3 / 20) < 0 :=
+fun {R} [Field R] [LE R] [LT R] [LawfulOrderLT R] [IsLinearOrder R] [OrderedRing R] =>
+  MarkedGate.admissibility_counterexample._proof_1_3
+'MarkedGate.admissibility_counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem MarkedGate.gate_point_margin.{u} : ∀ {R : Type u} [inst : Field R] [inst_1 : LE R] [inst_2 : LT R]
+  [LawfulOrderLT R] [inst_4 : IsLinearOrder R] [OrderedRing R],
+  have r := 467988598319 / 670130653625;
+  have z := 133631714876 / 670130653625;
+  1 - r - z = 13702068086 / 134026130725 ∧
+    1 - r - 2 * z = -(65121374446 / 670130653625) ∧
+      3 - 2 * r - 8 * z = 1 / 125 ∧ 0 < 1 - r - z ∧ 1 - r - 2 * z < 0 ∧ 0 < 3 - 2 * r - 8 * z :=
+fun {R} [Field R] [LE R] [LT R] [LawfulOrderLT R] [IsLinearOrder R] [OrderedRing R] =>
+  id MarkedGate.gate_point_margin._proof_1_3
+'MarkedGate.gate_point_margin' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem MarkedGate.clipping_does_not_repair.{u} : ∀ {R : Type u} [inst : Field R] [inst_1 : LE R] [inst_2 : LT R]
+  [LawfulOrderLT R] [inst_4 : IsLinearOrder R] [OrderedRing R] (gap clip eta rowLoss : R),
+  gap < 0 → clip ≤ 3 * eta → 3 * eta < -gap → 0 ≤ rowLoss → gap + clip - rowLoss < 0 :=
+fun {R} [Field R] [LE R] [LT R] [LawfulOrderLT R] [IsLinearOrder R] [OrderedRing R] gap clip eta rowLoss hgap hc he
+    hl =>
+  MarkedGate.clipping_does_not_repair._proof_1_3 gap clip eta rowLoss hc he hl
+'MarkedGate.clipping_does_not_repair' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem MarkedGate.positive_width_normalization.{u} : ∀ {R : Type u} [inst : Field R] [inst_1 : LE R] [inst_2 : LT R]
+  [LawfulOrderLT R] [inst_4 : IsLinearOrder R] [OrderedRing R] (m r z : R),
+  0 < m → (r + z < m ↔ r / m + z / m < 1) ∧ (2 * r + 8 * z < 3 * m ↔ 2 * (r / m) + 8 * (z / m) < 3) :=
+fun {R} [Field R] [LE R] [LT R] [LawfulOrderLT R] [IsLinearOrder R] [OrderedRing R] m r z hm =>
+  have hn := MarkedGate.positive_width_normalization._proof_1_3 m hm;
+  have hi := Field.IsOrdered.inv_pos_iff.mpr hm;
+  have eq1 := MarkedGate.positive_width_normalization._proof_1_4 m r z hn;
+  have eq2 := MarkedGate.positive_width_normalization._proof_1_5 m r z hn;
+  have eq3 := MarkedGate.positive_width_normalization._proof_1_6 m r z hn;
+  have eq4 := MarkedGate.positive_width_normalization._proof_1_7 m r z hn;
+  ⟨{
+      mp := fun h =>
+        have hp := OrderedRing.mul_pos (MarkedGate.positive_width_normalization._proof_1_8 m r z h) hi;
+        MarkedGate.positive_width_normalization._proof_1_9 m r z (Eq.mp (congrArg (fun _a => 0 < _a) eq1) hp),
+      mpr := fun h =>
+        have hp := OrderedRing.mul_pos (MarkedGate.positive_width_normalization._proof_1_10 m r z h) hm;
+        MarkedGate.positive_width_normalization._proof_1_11 m r z (Eq.mp (congrArg (fun _a => 0 < _a) eq3) hp) },
+    {
+      mp := fun h =>
+        have hp := OrderedRing.mul_pos (MarkedGate.positive_width_normalization._proof_1_12 m r z h) hi;
+        MarkedGate.positive_width_normalization._proof_1_13 m r z (Eq.mp (congrArg (fun _a => 0 < _a) eq2) hp),
+      mpr := fun h =>
+        have hp := OrderedRing.mul_pos (MarkedGate.positive_width_normalization._proof_1_14 m r z h) hm;
+        MarkedGate.positive_width_normalization._proof_1_15 m r z (Eq.mp (congrArg (fun _a => 0 < _a) eq4) hp) }⟩
+'MarkedGate.positive_width_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem MarkedGate.no_sixth_power_alias : ∀ (a b : Nat), a ≤ 2 → b ≤ 2 → a % 6 = b % 6 → a = b :=
+fun a b ha hb hmod => Decidable.byContradiction fun a_1 => MarkedGate.no_sixth_power_alias._proof_1_1 a b ha hb hmod a_1
+'MarkedGate.no_sixth_power_alias' depends on axioms: [propext, Quot.sound]
+theorem MarkedGate.same_mobius_sign : ∀ (a b K total : Nat), a + K = total → b + K = total → (-1) ^ a = (-1) ^ b :=
+fun a b K total ha hb =>
+  have h := Decidable.byContradiction fun a_1 => MarkedGate.same_mobius_sign._proof_1_1 a b K total ha hb a_1;
+  Eq.mpr (id (congrArg (fun _a => (-1) ^ _a = (-1) ^ b) h)) (Eq.refl ((-1) ^ b))
+'MarkedGate.same_mobius_sign' depends on axioms: [propext, Quot.sound]
+theorem MarkedGate.inverse_capacity_monotone.{u} : ∀ {R : Type u} [inst : Field R] [inst_1 : LE R] [inst_2 : LT R]
+  [LawfulOrderLT R] [inst_4 : IsLinearOrder R] [OrderedRing R] (r s zr zs x delta : R),
+  r ≤ s →
+    0 ≤ x →
+      2 * x ≤ 1 →
+        0 ≤ delta → zr - zs ≤ s - r → 1 - delta * s - 2 * delta * x * zs ≤ 1 - delta * r - 2 * delta * x * zr :=
+fun {R} [Field R] [LE R] [LT R] [LawfulOrderLT R] [IsLinearOrder R] [OrderedRing R] r s zr zs x delta hrs hx hu hd
+    hcap =>
+  have h1 :=
+    OrderedRing.mul_nonneg (MarkedGate.inverse_capacity_monotone._proof_1_3 r s zr zs hcap)
+      (MarkedGate.inverse_capacity_monotone._proof_1_4 x hx);
+  have h2 :=
+    OrderedRing.mul_nonneg (MarkedGate.inverse_capacity_monotone._proof_1_5 r s hrs)
+      (MarkedGate.inverse_capacity_monotone._proof_1_6 x hu);
+  have hg := MarkedGate.inverse_capacity_monotone._proof_1_7 r s zr zs x h1 h2;
+  have h3 := OrderedRing.mul_nonneg hd hg;
+  MarkedGate.inverse_capacity_monotone._proof_1_8 r s zr zs x delta h3
+'MarkedGate.inverse_capacity_monotone' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem MarkedGate.endpoint_and_license.{u} : ∀ {R : Type u} [inst : Field R] [inst_1 : LE R] [inst_2 : LT R]
+  [LawfulOrderLT R] [inst_4 : IsLinearOrder R] [OrderedRing R],
+  11 / 12 - 21 / 125 / 4 = 328 / 375 ∧ 8748867 / 10000000 < (1 + 29991 / 40000) / 2 :=
+fun {R} [Field R] [LE R] [LT R] [LawfulOrderLT R] [IsLinearOrder R] [OrderedRing R] =>
+  MarkedGate.endpoint_and_license._proof_1_3
+'MarkedGate.endpoint_and_license' depends on axioms: [propext, Classical.choice, Quot.sound]

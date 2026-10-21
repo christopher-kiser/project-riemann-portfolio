@@ -1,0 +1,142 @@
+{
+  "method": "Fraction-only formula reconstruction; independent fixed 8x8 box partitions and direct monomial-to-Bernstein conversion",
+  "denominator_lower_bounds": {
+    "D": "369865/179946",
+    "P": "69973/89973",
+    "J": "69973/719784",
+    "K": "25880563645/64761125832"
+  },
+  "box_certificates": [
+    {
+      "name": "critical_inverse",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-124687585520322990095101/13424838392407762944000000",
+      "strictly_negative": true
+    },
+    {
+      "name": "critical_plain",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-433955259933343802373509/16781047990509703680000000",
+      "strictly_negative": true
+    },
+    {
+      "name": "critical_long",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-9864774429937663042609/839052399525485184000000",
+      "strictly_negative": true
+    },
+    {
+      "name": "published_lower_d",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-22682008051/155426701996800",
+      "strictly_negative": true
+    },
+    {
+      "name": "published_upper_d",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-63727125563/1494487519200000",
+      "strictly_negative": true
+    },
+    {
+      "name": "published_lower_x",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-275448646272797/1865120423961600000",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_t_ge_1",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-45845284561/97141688748",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_t_le_3/2",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-2977800202763/3238056291600",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_r_ge_t_minus_half",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-3720282532741/32380562916000",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_r_le_1",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-26057719494889/32380562916000",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_m_positive",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-165013415641027/97141688748000",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_m_below_half",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-3720282532741/32380562916000",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_zI_positive",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-19456771355231/29889750384000",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_zI_below_supply",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-116105981939966609/1680830983403994240",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_zI_below_one_minus_r",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-17557490100952589/124341361597440000",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_zP_positive",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-276488033304046613/5826752774482536000",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_zP_below_supply",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-477329418180001775130341/630122525290864890648000",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_inverse_2r8z_strict",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-704697052957/64761125832000",
+      "strictly_negative": true
+    },
+    {
+      "name": "feasible_plain_2m6kz_strict",
+      "boxes": 64,
+      "largest_Bernstein_coefficient": "-35215825827420161/3885667549920000000",
+      "strictly_negative": true
+    }
+  ],
+  "fixed_conditions": 16,
+  "all_fixed_conditions": true,
+  "gate_point_obstruction": {
+    "delta": "1/2",
+    "x": "1/2",
+    "r0": "467988598319/670130653625",
+    "zI": "133631714876/670130653625",
+    "proposed_first_gap": "13702068086/134026130725",
+    "old_first_gap": "-65121374446/670130653625",
+    "second_gap": "1/125"
+  },
+  "negative_controls": {
+    "sign_reversal_rejected": true,
+    "old_margin_claim_rejected": true
+  },
+  "endpoint": "328/375",
+  "scope": "finite rational algebra only; not the analytic moment"
+}

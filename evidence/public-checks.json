@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "claims": 76,
+  "research_notes": 46,
+  "exact_continuum_inequalities": 19,
+  "Bernstein_boxes": 1216,
+  "fixed_comparisons": 16,
+  "negative_controls": {
+    "sign_reversal_rejected": true,
+    "old_margin_claim_rejected": true
+  },
+  "nested_prime_examples": {
+    "sieve_limit": 100000,
+    "block_identity_examples": 24,
+    "interior_count_examples": 112,
+    "interval": [
+      31,
+      127
+    ],
+    "interior_counts": [
+      95,
+      19,
+      5,
+      1,
+      0
+    ],
+    "missing_correction_rejected": true,
+    "affine_control_examples": 8,
+    "scope": "Exact finite demonstrations; general proof is written separately."
+  },
+  "scope": "Public finite checks, source hashes and documentation; no RH or full Haglund proof."
+}
