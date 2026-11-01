@@ -1,6 +1,6 @@
 # Research status and timeline
 
-Last synchronized: **November 1, 2026 — Round 10**. [Current continuation](continuations/2026-11-01-round10.md) · [Maintenance policy](research-maintenance.md).
+Last synchronized: **November 1, 2026 — Round 11**. [Current continuation](continuations/2026-11-01-round11.md) · [Maintenance policy](research-maintenance.md).
 
 ## Current scientific status
 
@@ -14,6 +14,8 @@ Last synchronized: **November 1, 2026 — Round 10**. [Current continuation](con
 | New actual RH frontier advance from the October 19–20 investigations | **NONE PROVED** |
 | Round 9 remote-root filter subspace | **CONDITIONAL COMPUTATIONAL EXCLUSION**; preserved; search priority superseded by Round 10 |
 | Round 10 complete fixed five-node space | **CONDITIONAL EXACT EXCLUSION** for all complex vectors; inherited input enclosures; no RH advance |
+| Round 11 four separate sixth-node extensions | **CONDITIONAL INTERVAL EXCLUSION**; fresh new data and inherited positive core; no RH advance |
+| Round 11 near-duplicate extensions | **INCONCLUSIVE**; derivative-limit diagnostic is not certified |
 | Historical strict Git provenance | **BLOCKED_UNWAIVED** |
 
 ## Selected milestones
@@ -28,14 +30,17 @@ Last synchronized: **November 1, 2026 — Round 10**. [Current continuation](con
 | October 20 | Prime hierarchies, signed-arithmetic controls, Walsh/pole analysis, and prime-phase limit audit; 76-record synchronization | Written analytic claims remain source-limited; no new zero exclusion |
 | November 1 — Round 9 | Uniform filter-subspace exclusion; dated continuation register and private replay committed | Conditional on inherited custom interval bounds; no RH proof or off-line zero |
 | November 1 — Round 10 | Entire fixed five-node space excluded; exact midpoint and entry-error certificate | All-vector finite exclusion conditional on inherited bounds; no new zero-free region |
+| November 1 — Round 11 | Four separate sixth-node extensions positive; four close-node cases inconclusive; balanced finite-sum evaluator | Fresh interval checks with custom analytic trust boundary; no global or nine-node result |
 
 ## Current computational continuation
 
-The [Round 10 report](continuations/2026-11-01-round10.md) establishes a lower bound greater than 1.5e-14 for every nonzero complex direction at the five fixed nodes and sixteen-pair deflation. Four Wolfram batches, an independent exact rational matrix checker and a separate 100-digit numerical replay were completed. This closes filter-only optimization at this configuration, including the family in the preserved [Round 9 report](continuations/2026-11-01-round09.md).
+The [Round 11 report](continuations/2026-11-01-round11.md) gives strictly positive Schur bounds for four distinct sixth-node extensions of the old core, each tested separately. Four near-duplicate extensions remain inconclusive. Five Wolfram batches, sixteen fresh zero isolations and independent numerical/exact controls were completed. The full xi contribution is retained.
 
-The input analytic enclosures were not regenerated or externally reviewed. No new zero isolations, hosted CI result or formal verification is claimed. Prior Rounds 5–8 remain inventoried privately within their original trust boundaries.
+An equivalent scaled rising-factorial recurrence repaired excessive interval inflation in a new higher-parameter evaluation. The original conservative evaluator and initial inconclusive attempt are preserved. This is an implementation improvement, not a new analytic estimate. Near-collision Schur scores vanish at least quadratically; a tiny raw score is not evidence of a sign crossing. The derivative-limit diagnostic remains uncertified.
 
-The next candidate must change kernel data, the deflation or the analytic input; merely changing polynomial coefficients at the closed configuration cannot help. A new node's Schur complement can be screened with a residual bound, but no new genuine sixth-node interval result is asserted. A failed sufficient test remains inconclusive.
+The [Round 10 report](continuations/2026-11-01-round10.md) continues to close all coefficient searches at the old five-node configuration. Its inherited core enclosures are reused; the new extension data were evaluated afresh. The custom analytic bounds remain externally unreviewed. No Lean build, hosted CI success, simultaneous nine-node certificate or new zero-free region is claimed.
+
+Close coefficient-only searches within the four separately excluded six-node cases. Resolve derivative/divided-difference errors before interpreting close-node candidates, or introduce genuinely different unexcluded kernel data or a new arithmetic estimate. An inconclusive sufficient test is never a counterexample. Prior Rounds 5–10 remain preserved within their original scopes.
 
 ## Preserved October 20 analytic frontier
 
