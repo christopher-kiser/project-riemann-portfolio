@@ -6,9 +6,15 @@
 
 Project Riemann investigates how mathematical ideas can be turned into precise claims, reproducible computations, and proofs whose assumptions can be inspected. It began with zeros of approximations to the Riemann Xi function and grew into a documented study of prime hierarchies, arithmetic cancellation, spectral models, and the limits of proposed proof methods.
 
-This portfolio brings together **76 recorded claims and questions, 46 research notes, 10 focused Lean declarations, and a portable exact-rational verifier**. It includes successful limited results, countermodels, corrections, and the reasons promising approaches stopped.
+The preserved October 20 snapshot brings together **76 recorded claims and questions, 46 research notes, 10 focused Lean declarations, and a portable exact-rational verifier**. It includes successful limited results, countermodels, corrections, and the reasons promising approaches stopped.
 
 **Current boundary:** RH remains open. Complete Haglund k=2/k=3 verification is unverified. The Lean proofs establish the precise algebraic statements in their source; they do not establish the unresolved analytic premises.
+
+## Latest continuation — November 1, 2026
+
+[Round 9: a remote-root filter family excluded](docs/continuations/2026-11-01-round09.md). A two-dimensional compression gives a strictly positive bound for an entire proposed filter family, conditional on inherited interval enclosures. This is a bounded search exclusion, not a proof or disproof of RH.
+
+The new [continuation claim register](data/continuation-claims.csv) is separate from the preserved 76-record historical registry. Full unreleased implementation and evidence remain in the private verifier repository. See the [research maintenance policy](docs/research-maintenance.md) for publication, verification and correction rules.
 
 ## Start with three case studies
 
@@ -59,7 +65,8 @@ The distinctive contribution is the project-specific research trail and verifica
 docs/                 Guided case studies, status, research atlas and reproduction
 lean/                 Exact formal statements; no analytic RH bridge assumed
 scripts/              Small, local, standard-library verification tools
-data/claims.csv       All 76 classified claims and questions
+data/claims.csv       Preserved 76-record October 20 claim registry
+data/continuation-claims.csv  Subsequent classified findings and dependencies
 research/notes/       Public reading copies of 46 project research notes
 research/source-index.csv  Original and public-copy hashes and transformations
 evidence/             Reference certificates and fresh local verification receipts
@@ -69,4 +76,4 @@ evidence/             Reference certificates and fresh local verification receip
 
 **Related projects:** [earlier Project Riemann overview](https://github.com/christopher-kiser/project-riemann-research) · [formal-verification workspace](https://github.com/christopher-kiser/math-research-verifier) · [Christopher Kiser on GitHub](https://github.com/christopher-kiser)
 
-Research snapshot: **October 20, 2026**. Public code and notes are provided for inspection; no project-wide reuse license has yet been selected.
+Historical research snapshot: **October 20, 2026**. Latest continuation summary: **November 1, 2026**. Public code and notes are provided for inspection; no project-wide reuse license has yet been selected.
