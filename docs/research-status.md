@@ -1,6 +1,6 @@
 # Research status and timeline
 
-Last synchronized: **November 1, 2026**. [Current continuation](continuations/2026-11-01-round09.md) · [Maintenance policy](research-maintenance.md).
+Last synchronized: **November 1, 2026 — Round 10**. [Current continuation](continuations/2026-11-01-round10.md) · [Maintenance policy](research-maintenance.md).
 
 ## Current scientific status
 
@@ -12,7 +12,8 @@ Last synchronized: **November 1, 2026**. [Current continuation](continuations/20
 | Ten published Lean helper declarations | Exact statements compiled locally; source, build log and dependencies included |
 | Rational parameter gate | Independently replayable finite algebra; does not prove the missing moment |
 | New actual RH frontier advance from the October 19–20 investigations | **NONE PROVED** |
-| Round 9 remote-root filter subspace | **CONDITIONAL COMPUTATIONAL EXCLUSION**; exact-rational replay of inherited enclosures, not an RH advance |
+| Round 9 remote-root filter subspace | **CONDITIONAL COMPUTATIONAL EXCLUSION**; preserved; search priority superseded by Round 10 |
+| Round 10 complete fixed five-node space | **CONDITIONAL EXACT EXCLUSION** for all complex vectors; inherited input enclosures; no RH advance |
 | Historical strict Git provenance | **BLOCKED_UNWAIVED** |
 
 ## Selected milestones
@@ -25,15 +26,16 @@ Last synchronized: **November 1, 2026**. [Current continuation](continuations/20
 | October 18 | Consolidation of analytic results, countermodels, formal algebra and dependency corrections | No new RH frontier advance; external formalization was not locally rebuilt |
 | October 19 | Falsification-first marked inverse audit: 19 continuum inequalities, 16 comparisons and 10 Lean declarations | Existing initialization fails to cover the relaxed range; no arithmetic counterexample to the proposed moment was obtained |
 | October 20 | Prime hierarchies, signed-arithmetic controls, Walsh/pole analysis, and prime-phase limit audit; 76-record synchronization | Written analytic claims remain source-limited; no new zero exclusion |
-| November 1 | Round 9 uniform filter-subspace exclusion; dated continuation register and private replay committed | Conditional on inherited custom interval bounds; no new RH proof, zero-free region or off-line zero |
+| November 1 — Round 9 | Uniform filter-subspace exclusion; dated continuation register and private replay committed | Conditional on inherited custom interval bounds; no RH proof or off-line zero |
+| November 1 — Round 10 | Entire fixed five-node space excluded; exact midpoint and entry-error certificate | All-vector finite exclusion conditional on inherited bounds; no new zero-free region |
 
 ## Current computational continuation
 
-The [Round 9 report](continuations/2026-11-01-round09.md) rules out a specified two-dimensional filter subspace for fixed nodes and sixteen-pair deflation. Four Wolfram batches, a standard-library exact-rational matrix replay, and separate 90-digit numerical diagnostics were completed. The upstream analytic enclosures were not regenerated or externally reviewed in this update.
+The [Round 10 report](continuations/2026-11-01-round10.md) establishes a lower bound greater than 1.5e-14 for every nonzero complex direction at the five fixed nodes and sixteen-pair deflation. Four Wolfram batches, an independent exact rational matrix checker and a separate 100-digit numerical replay were completed. This closes filter-only optimization at this configuration, including the family in the preserved [Round 9 report](continuations/2026-11-01-round09.md).
 
-Prior conversation Rounds 5–8 are inventoried in the private continuation record. Their hashes preserve source identity; they do not establish independent mathematical verification. The full earlier campaigns are not claimed as newly replayed.
+The input analytic enclosures were not regenerated or externally reviewed. No new zero isolations, hosted CI result or formal verification is claimed. Prior Rounds 5–8 remain inventoried privately within their original trust boundaries.
 
-The next candidate must materially leave the excluded subspace or supply a new arithmetic estimate. A failed exclusion test is only inconclusive. The October analytic frontier below remains unresolved.
+The next candidate must change kernel data, the deflation or the analytic input; merely changing polynomial coefficients at the closed configuration cannot help. A new node's Schur complement can be screened with a residual bound, but no new genuine sixth-node interval result is asserted. A failed sufficient test remains inconclusive.
 
 ## Preserved October 20 analytic frontier
 

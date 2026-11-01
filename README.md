@@ -12,7 +12,7 @@ The preserved October 20 snapshot brings together **76 recorded claims and quest
 
 ## Latest continuation — November 1, 2026
 
-[Round 9: a remote-root filter family excluded](docs/continuations/2026-11-01-round09.md). A two-dimensional compression gives a strictly positive bound for an entire proposed filter family, conditional on inherited interval enclosures. This is a bounded search exclusion, not a proof or disproof of RH.
+[Round 10: the whole fixed five-node search is excluded](docs/continuations/2026-11-01-round10.md). Exact rational factorization and an entry-error bound establish positivity for every complex vector in the fixed node space, conditional on inherited matrix enclosures. This strengthens the preserved [Round 9 subspace result](docs/continuations/2026-11-01-round09.md) and closes coefficient-only scans at this configuration. It is not a proof or disproof of RH.
 
 The new [continuation claim register](data/continuation-claims.csv) is separate from the preserved 76-record historical registry. Full unreleased implementation and evidence remain in the private verifier repository. See the [research maintenance policy](docs/research-maintenance.md) for publication, verification and correction rules.
 
@@ -76,4 +76,4 @@ evidence/             Reference certificates and fresh local verification receip
 
 **Related projects:** [earlier Project Riemann overview](https://github.com/christopher-kiser/project-riemann-research) · [formal-verification workspace](https://github.com/christopher-kiser/math-research-verifier) · [Christopher Kiser on GitHub](https://github.com/christopher-kiser)
 
-Historical research snapshot: **October 20, 2026**. Latest continuation summary: **November 1, 2026**. Public code and notes are provided for inspection; no project-wide reuse license has yet been selected.
+Historical research snapshot: **October 20, 2026**. Latest continuation summary: **November 1, 2026 — Round 10**. Public code and notes are provided for inspection; no project-wide reuse license has yet been selected.
