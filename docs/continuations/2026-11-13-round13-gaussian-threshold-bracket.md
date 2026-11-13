@@ -95,3 +95,36 @@ This is a **scaling deduction**, not an assertion that the published positivity 
 - New Python standard-library rational replay checked exponents, phase, Taylor lower bound, the strict rational profile enclosure and an independent numerical diagnostic. PASS.
 - No Lean build, Arb validation, referee review, new zero exclusion or theorem about actual zeta was performed. No change to historical finite certificates or unresolved Haglund and marked-inverse obligations.
 - **Verdict: NO_NEW_RH_FRONTIER_ADVANCE.** Retain the exact synthetic bracket as a counterexample benchmark; do not pursue arbitrary smoothing-width scans. The productive next mathematics, if any, must use xi-specific theta/prime structure to control the unsmoothed sign uniformly, not finite synthetic positivity.
+
+
+## 6. November 13 focused stop test: no bandwidth-independent linear positivity margin
+
+**Purpose:** Test one proposed next step—extend a single positive lower-bound margin from the published \(A=6\) certificate uniformly as \(A\to\infty\). This was **rejected** on elementary grounds, not promoted to an RH claim.
+
+Sra's kernel (Section 2.3) is
+\[
+\kappa_A(x)=\frac{8A}{\pi^3}
+\left(\frac{\cos(Ax)}{1-(2Ax/\pi)^2}\right)^2.
+\]
+Assume RH *only for this conditional no-go test*. Then the positive ordinates \(\gamma>0\) are real, the zero profile at \(x=0\) satisfies
+\[
+P_{\kappa_A}'(0)=2p_{\kappa_A}(0)
+=2\sum_{\gamma>0}\kappa_A(\gamma).
+\]
+For all sufficiently large \(A\) (indeed \(A\ge1\) since the least ordinate exceeds 14), we have \(4A^2\gamma^2/\pi^2\ge2\). Thus
+\[
+0\le\kappa_A(\gamma)
+\le\frac{2\pi}{A^3\gamma^4},
+\quad
+0\le P_{\kappa_A}'(0)
+\le\frac{4\pi}{A^3}\sum_{\gamma>0}\gamma^{-4}.
+\]
+The sum is finite by the classical Riemann–von Mangoldt zero-counting formula \(N(T)=O(T\log T)\). Therefore
+\[
+\boxed{\,P_{\kappa_A}'(0)=O(A^{-3})\to0\quad\text{if RH holds}.\,}
+\]
+The published \(A=6\) estimate is \(P_{\kappa_6}(x)\ge10^{-8}\min(x,1)\). If a *fixed* \(c>0\) gave \(P_{\kappa_A}(x)\ge c\min(x,1)\) for every large \(A\), letting \(x\downarrow0\) would force \(P_{\kappa_A}'(0)\ge c\), contradicting the conditional upper bound above. The algebraic kernel rewrite was independently checked with Wolfram; the inequality uses the elementary estimate \((q-1)^2\ge q^2/4\) when \(q\ge2\). The cited primary sources are Sra's 2026-11-11 preprint, Theorem 2.5 and its kernel in Section 2.3, and the classical Riemann–von Mangoldt zero-counting formula.
+
+**Decision / anti-accumulation stop:** Close the proposed **bandwidth-independent fixed-margin** route. It is incompatible even with the *hypothetical RH-true world*, so it cannot serve as a general proof of RH. This does **not** exclude bandwidth-dependent positivity bounds, an \(A\)-dependent shrinking margin, or an entirely different kernel. Reopen only if a new arithmetic estimate is proved independently, with its error explicitly smaller than a justified \(A\)-dependent lower margin. Do not produce extra synthetic examples, increase bandwidth numerically, or claim first-in-literature novelty on this basis.
+
+**Status:** CONDITIONAL_STRUCTURAL_NO_GO / NO_NEW_RH_FRONTIER_ADVANCE. No new zero-free region, actual-zeta positivity theorem, marked-inverse estimate, or Haglund gap closure.
